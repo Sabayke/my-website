@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TUTO node-red</title>
+  <meta charset="utf-8">
+</head>
+<body>
+<h2> Installer Node-RED sur Windows/Ubuntu/MacOS </h2>
+<p> Node-RED supporte node.js 0.10.x ou plus récent. Il est recommandé d’utilisé la version LTS (maintenance à long terme) de node.js</p2>
+<br>
+<p>Allez récupérer et puis installez node.js 4.x LTS qui correspond à votre plateforme</p>
+<ul>
+<li> MacOS <a class="link" href="https://nodejs.org/dist/v14.15.5/node-v14.15.5.pkg" target="_blank"> Version universelle </a></li>
+<li> Windows <a class="link" href="https://nodejs.org/dist/v14.15.5/node-v14.15.5-x64.msi" target="_blank">64 bit</a></li>
+<li> Ubuntu <a class="link" href="https://nodejs.org/dist/v14.15.5/node-v14.15.5-linux-x64.tar.xz" target="_blank"> 64 bit</li>
+</ul>
+<h2>Installation via <stong> Package manager</strong> MacOS</h2>
+<img src="https://projetsdiy.fr/data/uploads/2016/10/macos-node-red-installation-node.js-autre-plateformes.png">
+<br>
+<p> Lancez l’exécutable pour démarrer l’installation.</p>
+<img src="https://projetsdiy.fr/data/uploads/2016/10/macos-node-red-installation-node.js-1.png">
+<br>
+<p> L’opération est très rapide. L’installeur vous indique les répertoires d’installation à la fin de l’opération.</p>
+<img src="https://projetsdiy.fr/data/uploads/2016/10/macos-node-red-installation-node.js-repertoires.png">
+<br>
+<h2>Installation node-red MacOS</h2>
+<br>
+<p>Sur macOS, l’installation de Node-RED est identique à Linux (ou Raspian). Il faut faire précédé la commande npm d’un sudo. 
+Le -g signifie que les sources seront téléchargées dans le répertoire npm et seront disponibles pour tous les projets node.js. –unsafe-perm permet 
+de continuer l’installation en cas d’erreur</p>
+<code>sudo npm install -g --unsafe-perm node-red </code>
+<br>
+<p>L'installation est termine pour demarrer le serveur node-red il suffit d'executer la commande <code>node-red</code></p>
+<br>
+<p>Felicitations vous venez d'installer node-red suis vraiment fier de vous :) </p>
+<br>
+<h2>Installer Nodejs sur Windows 10</h2>
+<p>Dans un navigateur Web, accédez à <a href="https://nodejs.org/en/download/">nodejs</a>. 
+Cliquez sur le bouton Windows Installer pour télécharger la dernière version par défaut. Au moment de la rédaction de cet article, la version 10.16.0-x64 était la dernière version. 
+Le programme d'installation de Node.js inclut le gestionnaire de packages NPM.</p>
+<br>
+<img src="https://phoenixnap.com/kb/wp-content/uploads/2019/06/donwload-nodejs-installer-windows-1.png">
+<br>
+<h2>Installez Node.js et NPM à partir du navigateur</h2>
+<ol>
+<li> Une fois le téléchargement du programme d'installation terminé, lancez-le. 
+Ouvrez le lien de téléchargement dans votre navigateur et cliquez sur le fichier. 
+Ou, accédez à l'emplacement où vous avez enregistré le fichier et double-cliquez dessus pour le lancer.
+</li>
+<li> Le système vous demandera si vous souhaitez exécuter le logiciel - cliquez sur <strong>Exécuter</strong>.</li>
+<li> Vous serez accueilli dans l'assistant d'installation de Node.js - cliquez sur <strong>Suivant</strong></li>
+<li>Le programme d'installation vous demandera l'emplacement d'installation. 
+Laissez l'emplacement par défaut, sauf si vous avez un besoin spécifique de l'installer ailleurs - puis cliquez sur <strong>Suivant</strong> </li>
+<li> L'assistant vous permettra de sélectionner les composants à inclure ou à supprimer de l'installation. Encore une fois, 
+sauf si vous avez un besoin spécifique, acceptez les valeurs par défaut en cliquant sur <strong>Suivant</strong> </li>
+<li> Enfin, cliquez sur le bouton <strong>Installer</strong> pour exécuter le programme d'installation. Une fois terminé, cliquez sur <strong>Terminer</strong></li>
+</ol>
+<h2> Vérifier l'installation</h2>
+<p>Ouvrez une invite de commande (ou PowerShell) et entrez ce qui suit:</p>
+<code> node -v </code>
+<p>Le système doit afficher la version Node.js installée sur votre système. Vous pouvez faire de même pour NPM: </p>
+<code> npm -m</code>
+<h2>Exemple :</h2>
+<img src="https://phoenixnap.com/kb/wp-content/uploads/2019/06/verify-node-insallation-windows.png">
+<br>
+<h2>Installer node-red sur windows </h2>
+<p>Avec le terminal(<strong>CMD</strong>), on va installer Node-RED comme sur macOS ou Linux. La commande sudo ne doit pas être ajoutée. </p>
+<code> npm install -g --unsafe-perm node-red </code>
+<p>Démarrer manuellement Node-Red</h2>
+<p>exécutez la commande </p>
+<code> node-red</code>
+<br>
+<p>Au premier démarrage, vous devrez ajouter une nouvelle règle au pare-feu Windows.</p>
+<img src="https://projetsdiy.fr/data/uploads/2016/11/4-autoriser-pare-feu-node-red.jpg">
+<p>Felicitations node-red est bien installe sur votre machine</p>
+<br>
+<h2>Installer nodejs sur Ubuntu/kali/debian</h2>
+<p>Installer Nodejs sous ubuntu/kali/debian est simple, il suffit d'installer les paquets nodejs npm. 
+Vous préfèrerez probablement installer la version que met à disposition l'équipe de NodeJS. </p>
+<code>
+sudo apt-get update
+sudo apt-get install nodejs npm
+</code>
+<h2>Installer node-red sur ubuntu/kali/debian</h2>
+<p>Pour installer Node-RED, vous pouvez utiliser la commande npm fournie avec node.js:</p>
+<code> sudo npm install -g --unsafe-perm node-red</code>
+<p>Une fois installé en tant que module global, vous pouvez utiliser la commande node-red pour démarrer Node-RED dans votre terminal. 
+Vous pouvez utiliser Ctrl-C ou fermer la fenêtre du terminal pour arrêter Node-RED.</p>
+<code>node-red</code>
+</body>
+</html>
